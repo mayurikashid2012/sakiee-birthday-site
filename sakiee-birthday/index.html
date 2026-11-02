@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Sakiee 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#d9c2a0;--dot:#c8ad88;--ink:#4b2f2a;--rose:#c8456b;--card:#fffaf2;--tape:rgba(240,150,175,.8);--sage:#a9bf9c;--lined:#e6d6dd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#2b2126;--dot:#3a2d33;--ink:#f3e4da;--rose:#ff8fb0;--card:#3b2e33;--tape:rgba(210,120,150,.7);--sage:#6f8a66;--lined:#4a3a42}}
+:root[data-theme="dark"]{--paper:#2b2126;--dot:#3a2d33;--ink:#f3e4da;--rose:#ff8fb0;--card:#3b2e33;--tape:rgba(210,120,150,.7);--sage:#6f8a66;--lined:#4a3a42}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:100%;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{position:relative;overflow:hidden;font-family:'Patrick Hand',cursive;font-size:1.15rem;color:var(--ink);background:radial-gradient(var(--dot) 1.6px,transparent 1.8px) 0 0/22px 22px,var(--paper)}
+.stage{position:absolute;inset:0 0 112px;overflow-y:auto;display:flex;z-index:2}
+.pg{margin:auto;width:min(92vw,470px);padding:56px 4px 20px;text-align:center;animation:in .5s ease both}
+@keyframes in{from{opacity:0;transform:translateY(14px) rotate(-1deg)}to{opacity:1;transform:none}}
+h1,h2{font-family:'Dancing Script',cursive;color:var(--rose);margin:.2em 0;line-height:1.1}
+h1{font-size:clamp(2.6rem,12vw,3.6rem)}h2{font-size:2rem}
+.hand{font-family:'Caveat',cursive;font-size:1.5rem;line-height:1.3}
+.sheet{position:relative;text-align:left;background:repeating-linear-gradient(var(--card) 0 31px,var(--lined) 31px 32px);color:var(--ink);padding:26px 22px 20px 26px;border-radius:3px;box-shadow:0 8px 20px rgba(60,30,30,.3);transform:rotate(-1deg);font-family:'Caveat',cursive;font-size:1.45rem;line-height:32px;border-left:3px double var(--rose)}
+.sheet p{margin:0 0 32px}.sheet ol{margin:0;padding-left:1.3em}.sheet li{margin-bottom:32px}
+.tape{position:absolute;top:-14px;left:50%;width:96px;height:28px;margin-left:-48px;background:var(--tape);transform:rotate(-3deg);box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.cover{position:relative;background:var(--card);padding:34px 18px 28px;border-radius:4px;box-shadow:0 10px 26px rgba(60,30,30,.35);transform:rotate(1.5deg)}
+.cover .big{font-size:4rem;animation:pop 2.4s ease-in-out infinite}
+@keyframes pop{50%{transform:scale(1.12) rotate(6deg)}}
+.pl{position:relative;background:var(--card);padding:14px 14px 12px;border-radius:3px;box-shadow:0 10px 24px rgba(60,30,30,.35);transform:rotate(var(--r,-2deg));margin:10px auto 0;width:min(86vw,340px)}
+.ph{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;background:var(--sage);cursor:pointer;overflow:hidden;color:#fff;font-size:1.2rem;line-height:1.6}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.pl textarea{width:100%;margin-top:10px;border:0;border-bottom:2px dashed var(--rose);background:transparent;color:var(--ink);font:inherit;font-family:'Caveat',cursive;font-size:1.35rem;text-align:center;resize:none;outline:none}
+.pl textarea:focus-visible,.ph:focus-within{outline:3px solid var(--rose);outline-offset:2px}
+.note{display:inline-block;margin:18px 0 0;background:#fff3a8;color:#4b2f2a;font-family:'Caveat',cursive;font-size:1.35rem;padding:10px 16px;transform:rotate(2deg);box-shadow:0 4px 10px rgba(0,0,0,.25);max-width:88%}
+.tag{display:inline-block;font-family:'Caveat',cursive;font-size:1.5rem;background:var(--tape);color:#4b2f2a;padding:2px 16px;transform:rotate(-2deg)}
+.nav{position:absolute;left:0;right:0;bottom:0;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 16px calc(8px + env(safe-area-inset-bottom,0px));z-index:5}
+.btn{font:inherit;font-family:'Caveat',cursive;font-size:1.5rem;font-weight:700;background:var(--rose);color:#fff;border:0;border-radius:30px;padding:6px 24px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.3)}
+.btn.ghost{background:var(--card);color:var(--rose)}
+.btn:disabled{opacity:.3;cursor:default}
+.btn:focus-visible,.fab:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.cnt{font-family:'Caveat',cursive;font-size:1.3rem}
+.tick{position:absolute;left:0;right:0;bottom:74px;min-height:36px;text-align:center;font-family:'Caveat',cursive;font-size:1.55rem;line-height:1.2;color:var(--rose);padding:0 20px;z-index:4;pointer-events:none;opacity:0;transition:opacity .6s;text-shadow:0 0 6px var(--paper),0 0 6px var(--paper)}
+.tick.on{opacity:1}
+.kar{text-align:center;margin-top:14px;transform:rotate(1deg)}
+.ly{opacity:.45;font-size:1.35rem;line-height:32px;transition:opacity .6s,transform .6s}
+.ly.now{opacity:1;color:var(--rose);transform:scale(1.05)}
+.fabs{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:6;display:flex;gap:8px}
+.fab{width:44px;height:44px;border-radius:50%;border:0;background:var(--card);font-size:1.3rem;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.3)}
+.fx{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.fx span{position:absolute;bottom:-40px;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-115vh) rotate(40deg);opacity:.2}}
+@media (prefers-reduced-motion:reduce){.fx{display:none}.cover .big,.pg{animation:none}}
+</style>
+</head>
+<body>
+<div class="fx" id="fx"></div>
+<div class="fabs">
+  <button class="fab" id="mus" aria-label="Play or pause music">🎵</button>
+  <label class="fab" style="display:flex;align-items:center;justify-content:center" title="Use your own song">🎧<input type="file" accept="audio/*" id="song" hidden></label>
+</div>
+<div class="stage" id="stage"></div>
+<div class="tick" id="tick" aria-live="off"></div>
+<div class="nav">
+  <button class="btn ghost" id="back">Back</button>
+  <span class="cnt" id="cnt"></span>
+  <button class="btn" id="next">Next</button>
+</div>
+<script>
+var N=10;
+var stickers=["You turn every ordinary day into a keepsake.","Some people are home. You’re one of them.","Thank you for always staying.","Our memory, my favourite page.","Only you know the full story, my human diary.","Laughing with you hits different.","Forever the first person I tell everything.","This one makes me smile every time.","You’re my safe place, bestie.","Still choosing you, always."];
+var pages=[];
+pages.push(function(){return '<div class="cover"><i class="tape"></i><div class="big">🎂</div><h1>Happy Birthday</h1><h1 style="font-size:clamp(2.2rem,10vw,3rem);color:var(--ink)">Sakiee</h1><p class="hand" style="margin:6px 0">my human diary 📖💕</p><p class="hand" style="margin:14px 0 0">Heyyy babee💋<br>Happy Birthday to someone truly special!🎂</p></div>'});
+pages.push(function(){return '<div class="sheet"><i class="tape"></i><p>aaa.., i don’t know how to say but i love you ❤️ i really love you....</p><p>Actually i don’t know how to express feelings 😕</p><p>I want to say that, it’s ur day so plz don’t cry :l</p><p>I know ur a sensitive person, ur absolutely crying this moment..</p><p>&amp; also know ur missing me a little more 😉 aaa i also miss u 🫠</p></div>'});
+pages.push(function(){return '<div class="sheet" style="transform:rotate(1deg)"><i class="tape"></i><p>U enter 21 era....<br>I want to say that life stable thought that</p><ol><li>It’s ur life, u try how to live happy for ourself...</li><li>Destroy the old you, before it destroys you..</li><li>Plz plz kontya relationship madhe nko yeus 😅😅🤣<br>If u find someone like me then u should think about relationship</li><li>Even though I made so many mistakes in the past, you still chose to stay by my side, and for that, I want to thank you from the bottom of my heart 🫠🧿 FOREVER💋🌟</li></ol></div>'});
+for(var k=0;k<N;k++)(function(k){pages.push(function(){var r=[-3,2,-2,3,-1.5,2.5,-3,1.5,-2,3][k];return '<span class="tag">Memory '+(k+1)+' 📌</span><div class="pl" style="--r:'+r+'deg"><i class="tape"></i><label class="ph" id="ph"><span>📸<br>Tap to add<br>our photo</span><input type="file" accept="image/*" hidden></label><textarea id="cap" rows="2" maxlength="160" placeholder="Write your memory with her here…" aria-label="Caption for memory '+(k+1)+'"></textarea></div><p class="note">'+stickers[k]+'</p>'})})(k);
+pages.push(function(){return '<span class="tag">A little song for you 🎶</span><div class="sheet" style="margin-top:14px;transform:rotate(1deg);text-align:center;font-size:1.35rem"><i class="tape"></i><p style="margin:0 0 32px">You’re the page I turn to when the day gets heavy,<br>the quiet in my storm, the laugh I can’t hold back.<br>Every secret I own is safe inside your smile,<br>and every year with you feels like coming home.</p><p style="margin:0 0 32px;color:var(--rose)">So happy birthday, my human diary,<br>write me into every chapter you begin.<br>Twenty-one and glowing, my forever best friend,<br>I’ll be right here, holding your hand till the end. 💞</p><p style="margin:0">Through the mistakes and the midnight talks,<br>you stayed, and I’ll never forget it. 🧿</p></div>'});
+pages.push(function(){return '<div class="cover"><i class="tape"></i><div class="big">💞</div><h1>Happy Birthday</h1><p class="hand" style="font-size:2rem;margin:4px 0">I love you, Sakiee ❤️</p><p class="hand" style="font-size:2rem;margin:4px 0;color:var(--rose)">Forever with you 🧿</p><div class="sheet" style="margin-top:18px;font-size:1.3rem;line-height:32px;padding-right:14px"><p style="margin:0">To my best friend, my human diary: every secret, every laugh and every tear of mine lives in your pages. Thank you for being my safe place, my loudest cheerleader and my forever person. May 21 be soft, bright and full of everything you deserve. 🌟</p></div><p style="margin-top:18px"><button class="btn ghost" id="again">Read it again 💌</button></p></div>'});
+var cur=0,stage=document.getElementById('stage');
+function sv(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function ld(k){try{return localStorage.getItem(k)||''}catch(e){return ''}}
+function show(i){
+  cur=i;stage.innerHTML='<div class="pg">'+pages[i]()+'</div>';stage.scrollTop=0;if(tk){tk.style.display=(i===LP)?'none':'';hl()}if(i===LP)lyrPage();
+  document.getElementById('cnt').textContent=(i+1)+' / '+pages.length;
+  document.getElementById('back').disabled=i===0;
+  var nx=document.getElementById('next');nx.disabled=i===pages.length-1;nx.textContent=i===0?'Open 💌':'Next';
+  if(i>=3&&i<3+N){
+    var m=i-3,ph=document.getElementById('ph'),cap=document.getElementById('cap'),img=ld('sk_img'+m);
+    if(img)setImg(ph,img);else tryPhoto(ph,m);cap.value=ld('sk_cap'+m)||(CAPS&&CAPS[m])||'';
+    cap.oninput=function(){sv('sk_cap'+m,cap.value)};
+    ph.querySelector('input').onchange=function(e){var f=e.target.files[0];if(!f)return;fit(f,function(d){setImg(ph,d);sv('sk_img'+m,d)})};
+  }
+  if(i===pages.length-1){burst();var a=document.getElementById('again');a.onclick=function(){show(0)}}
+}
+function setImg(ph,d){var im=new Image();im.src=d;im.alt='Our memory';var old=ph.querySelector('img');if(old)old.remove();ph.querySelector('span').style.display='none';ph.insertBefore(im,ph.firstChild)}
+function fit(f,cb){var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.82))};im.src=r.result};r.readAsDataURL(f)}
+document.getElementById('next').onclick=function(){if(cur===0&&!on)music();if(cur===0)startLy();if(cur<pages.length-1)show(cur+1)};
+document.getElementById('back').onclick=function(){if(cur>0)show(cur-1)};
+document.addEventListener('keydown',function(e){if(e.target.tagName==='TEXTAREA')return;if(e.key==='ArrowRight'&&cur<pages.length-1)show(cur+1);if(e.key==='ArrowLeft'&&cur>0)show(cur-1)});
+var fx=document.getElementById('fx'),em=['💗','💕','🌸','✨','💌','🎀','🌷'];
+function heart(){var s=document.createElement('span');s.textContent=em[Math.floor(Math.random()*em.length)];s.style.left=Math.random()*96+'%';s.style.fontSize=(14+Math.random()*20)+'px';s.style.animationDuration=(7+Math.random()*7)+'s';fx.appendChild(s);setTimeout(function(){s.remove()},15000)}
+setInterval(heart,1400);
+function burst(){for(var i=0;i<28;i++)setTimeout(heart,i*90)}
+/* soft romantic music, made in the browser */
+var ac,master,on=false,tm,bar=0,audio=null;
+var chords=[[207.65,261.63,311.13,415.3],[174.61,207.65,261.63,349.23],[138.59,207.65,277.18,349.23],[155.56,233.08,311.13,392]],pent=[523.3,587.3,659.3,784,880,1046.5];
+function tone(f,t,d,v,ty,at){var o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+at);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(master);o.start(t);o.stop(t+d+.1)}
+var kc={};
+function pluck(f,t,v){var k=Math.round(f*10);if(!kc[k]){var sr=ac.sampleRate,L=Math.floor(sr*2.2),N2=Math.max(2,Math.round(sr/f)),b=ac.createBuffer(1,L,sr),d=b.getChannelData(0),i;for(i=0;i<N2;i++)d[i]=(Math.random()*2-1)*(1-i/N2*.3);for(i=N2;i<L;i++)d[i]=.4985*(d[i-N2]+d[i-N2+1]);kc[k]=b}var s=ac.createBufferSource(),g=ac.createGain(),lp=ac.createBiquadFilter();s.buffer=kc[k];lp.type='lowpass';lp.frequency.value=2600;g.gain.value=v;s.connect(lp);lp.connect(g);g.connect(master);s.start(t)}
+function bars(){var t=ac.currentTime+.05,c=chords[bar%4];bar++;
+  c.forEach(function(f,i){tone(f,t,4.6,.04,'triangle',1.2);if(i===0)tone(f/2,t,4.6,.05,'sine',1)});
+  var p=[0,1,2,3,2,1,0,1,2,3,2,1];for(var i=0;i<12;i++)tone(c[p[i]]*2,t+i*.33,1.5,.05,'sine',.01)}
+function music(){
+  if(audio){audio.play();on=true;sync();return}
+  if(!ac){ac=new (window.AudioContext||window.webkitAudioContext)();master=ac.createGain();master.gain.value=.8;var d=ac.createDelay();d.delayTime.value=.42;var fb=ac.createGain();fb.gain.value=.45;d.connect(fb);fb.connect(d);master.connect(d);d.connect(ac.destination);master.connect(ac.destination)}
+  ac.resume();on=true;bars();tm=setInterval(bars,4000);sync()}
+function stop(){on=false;clearInterval(tm);if(ac)ac.suspend();if(audio)audio.pause();sync()}
+function sync(){document.getElementById('mus').textContent=on?'🎵':'🔇'}
+document.getElementById('mus').onclick=function(){on?stop():music()};
+document.getElementById('song').onchange=function(e){var f=e.target.files[0];if(!f)return;stop();audio=new Audio(URL.createObjectURL(f));audio.loop=true;music()};
+/* photos from the photos/ folder, captions from captions.txt */
+var CAPS=null;
+try{fetch('captions.txt').then(function(r){return r.ok?r.text():''}).then(function(t){if(t)CAPS=t.split(/\r?\n/)}).catch(function(){})}catch(e){}
+function tryPhoto(ph,m){var ex=['jpg','jpeg','png','webp'],k=0;(function nx(){if(k>=ex.length)return;var im=new Image();im.onload=function(){if(!ph.querySelector('img'))setImg(ph,im.src)};im.onerror=function(){k++;nx()};im.src='photos/'+(m+1)+'.'+ex[k]})()}
+/* auto lyrics */
+var DL=["You’re the page I turn to when the day gets heavy","the quiet in my storm, the laugh I can’t hold back","Every secret I own is safe inside your smile","and every year with you feels like coming home","So happy birthday, my human diary","write me into every chapter you begin","Twenty-one and glowing, my forever best friend","I’ll be right here, holding your hand till the end 💞"];
+var LY=ld('sk_lyr')?ld('sk_lyr').split('\n'):DL,LP=3+N,li=-1,lt=null,tk=document.getElementById('tick');
+function hl(){var ls=document.querySelectorAll('.ly');for(var i=0;i<ls.length;i++)ls[i].classList.toggle('now',i===li)}
+function setLy(){li=(li+1)%LY.length;tk.classList.remove('on');setTimeout(function(){tk.textContent=LY[li];tk.classList.add('on');hl()},500)}
+function startLy(){if(lt)return;setLy();lt=setInterval(setLy,4000)}
+pages[LP]=function(){var h=LY.map(function(l,i){return (i===4?'<br>':'')+'<div class="ly">'+l.replace(/</g,'&lt;')+'</div>'}).join('');return '<span class="tag">A little song for you 🎶</span><div class="sheet kar"><i class="tape"></i>'+h+'</div><p><button class="btn ghost" id="ed">✏️ Change lyrics</button></p>'};
+function lyrPage(){var b=document.getElementById('ed'),editing=false;b.onclick=function(){var box=document.querySelector('.kar');if(!editing){editing=true;var ta=document.createElement('textarea');ta.id='lt';ta.rows=9;ta.setAttribute('aria-label','Lyrics, one line per row');ta.style.cssText='width:100%;background:transparent;border:0;outline:none;font:inherit;color:inherit;line-height:32px;text-align:center;resize:none';ta.value=LY.join('\n');box.innerHTML='<i class="tape"></i>';box.appendChild(ta);b.textContent='💾 Save lyrics'}else{var v=document.getElementById('lt').value.split('\n').map(function(s){return s.trim()}).filter(Boolean);if(v.length){LY=v;sv('sk_lyr',v.join('\n'));li=-1}show(LP)}}}
+show(0);
+</script>
+</body>
+</html>
